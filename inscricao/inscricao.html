@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Projeto Fã Clube - Inscrição</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../pagina-inicial/pagina-inicial.html">Página Inicial</a>
+            <a href="../conteudo/conteudo.html">Conteúdo</a>
+            <a href="inscricao.html">Inscrição</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Inscreva-se no TechFans Club 🚀</h1>
+            <p>
+                Atualmente nosso fã clube busca unir desenvolvedores de diversos lugares. 
+                Junte-se a nós para evoluirmos juntos e trocarmos conhecimentos constantes.
+            </p>
+        </article>
+
+        <section class="form-card">
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Gênero</label>
+                    <div class="radio-group">
+                        <label for="masculino">
+                            <input type="radio" id="masculino" name="sexo" value="M"> Masculino
+                        </label>
+                        <label for="feminino">
+                            <input type="radio" id="feminino" name="sexo" value="F"> Feminino
+                        </label>
+                        <label for="nao-informar">
+                            <input type="radio" id="nao-informar" name="sexo" value="N"> Não informar
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Data de Nascimento</label>
+                    <input id="date" type="date" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required />
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="participar" required />
+                    <label><a href="../termos/termos.html">Concordo com os termos e desejo participar do fã-clube.</a></label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary" onclick="register(event)">Finalizar Inscrição</button>
+                    <button type="reset" class="btn-secondary">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>© 2026 TechFans Club. Todos os direitos reservados.</footer>
+</body>
+</html>

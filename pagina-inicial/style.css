@@ -1,0 +1,83 @@
+#languages-image {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 800px;
+    border-radius: 2%;
+}
+
+.info-card {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--soft-border);
+    padding: 20px;
+}
+
+.info-section {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.curiosities-grid,
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: var(--text-main);
+    list-style: none;
+    gap: 20px;
+    width: 100%;
+}
+
+.curiosity-item,
+.list li {
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.curiosity-item {
+    background-color: var(--ice-blue);
+    border: 1px solid var(--tech-blue);
+}
+
+.curiosity-item:hover,
+.list li:hover {
+    transform: translateY(-5px);
+}
+
+.list li {
+    display: grid;
+    background-color: var(--white);
+    border: 1px solid var(--soft-border);
+    list-style: none;
+    gap: 6px;
+}
+
+@media (max-width: 768px) {
+    #languages-image {
+        width: 90%;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}

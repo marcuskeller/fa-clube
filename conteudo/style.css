@@ -1,0 +1,67 @@
+.table-card{
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--soft-border);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--soft-border);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid var(--soft-border);
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background-color: var(--tech-blue);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr {
+    background-color: #f0f8ff;
+    transition: 0.3s;
+}
+
+tr:hover {
+    background-color: var(--ice-blue);
+    color: var(--dark-navy);
+}
+
+table a {
+    color: var(--electric-blue);
+    font-weight: bold;
+}
+
+table a:hover {
+    color: var(--tech-blue);
+    text-decoration: underline;
+}
+
+th:first-child {
+    border-top-left-radius: 9px;
+}
+
+th:last-child {
+    border-top-right-radius: 9px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 9px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 9px;
+}

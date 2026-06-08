@@ -1,0 +1,89 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--soft-border);
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--tech-blue);
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid var(--soft-border);
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--electric-blue);
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-group input,
+label {
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--electric-blue);
+    color: var(--white);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--tech-blue);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--tech-blue);
+    border: 1px solid var(--soft-border);
+}
+
+.btn-secondary:hover {
+    background: var(--ice-blue);
+    transform: translateY(-2px);
+}
